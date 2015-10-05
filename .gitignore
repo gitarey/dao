@@ -1,0 +1,43 @@
+require 'csv'
+require 'open-uri'
+require 'nokogiri'
+
+file = "keepass.xml"
+
+doc = Nokogiri::XML::Document.parse(open(file)) do |config|
+  config.noblanks
+end ; nil
+
+entries = []
+doc.css('Group > Entry').each do |entry|
+  attributes = {}
+
+  attributes["GroupName"] = entry.parent.css('> Name').text
+
+  entry.css('String').each do |string|
+    unless string.css_path.include?('History')
+      key   = string.css('Key').text
+      value = string.css('Value').text
+
+      attributes[key] = value
+    end
+  end
+
+  entries << attributes
+end
+
+content = entries.map do |entry|
+  [
+    "#{entry['GroupName']} #{entry['Title']}",
+    entry['URL'],
+    entry['UserName'],
+    entry['Password'],
+    entry['Notes'],
+  ]
+end
+
+CSV.open("1password.csv", "wb") do |csv|
+  content.each do |row|
+    csv << row
+  end
+end
