@@ -1,9 +1,10 @@
+import java.sql.Wrapper
+
 group 'tif.uad.mtp'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
 
 repositories {
     mavenCentral()
@@ -14,6 +15,6 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
-task Wrapper(type: Wrapper){
+task wrapper(type: Wrapper){
     gradleVersion = '2.7'
 }
