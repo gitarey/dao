@@ -15,7 +15,7 @@ import java.util.List;
  * Created by gov on 08/10/15.
  */
 public class MainAplication {
-    public static void main(String[] args) {//Student kipli = new Student(6,"mukti");
+    public static void main(String[] args) {//Student kunto = new Student(6,"kunto");
 
         //Student kunto = new Student(6,"kunto");
         //Course jono = new Course(3, "Ruby On Rails");
@@ -27,37 +27,37 @@ public class MainAplication {
             //studentDao.insert(kipli);
             //studentDao.delete(6);
             //studentDao.update(kipli);
-            //System.out.println("Nama    : " + studentDao.findById(3).getName());
+            //System.out.println("Nama    : " + studentDao.findById(3).getNama());
             /*List<Student> studentList = studentDao.findAll();
             for (Student s : studentList) {
                 System.out.println("Id      : " + s.getId());
-                System.out.println("Nama    : " + s.getName());
+                System.out.println("Nama    : " + s.getNama());
                 System.out.println("--------------------------");
             }*/
 
             CourseDao courseDao = new CourseDaoImpl(DatabaseConnection.getInstance().getConnection());
 
-            //courseDao.insert(mukti);
-            //courseDao.update(mukti);
+            //courseDao.insert(kunto);
+            //courseDao.update(kunto);
             // courseDao.delete(3);
             //System.out.println("Nama    : " + courseDao.findById(2).getName());
             /*List<Course> courseList = courseDao.findAll();
             for (Course c : courseList){
-                System.out.println("Id Course   : " + c.getCode());
-                System.out.println("Name        : " + c.getName());
+                System.out.println("Id Course   : " + c.getKode());
+                System.out.println("Name        : " + c.getNama());
                 System.out.println("--------------------------");
             }*/
 
             //NilaiDao nilaiDao = new NilaiDaoImpl(DatabaseConnection.getInstance().getConnection());
 
-            //nilaiDao.insert(wibowo);
-            //nilaiDao.update(wibowo);
+            //nilaiDao.insert(kunto);
+            //nilaiDao.update(kunto);
             //nilaiDao.delete(1);
             //System.out.println("Nilai   : " + nilaiDao.findById(2).getNilai());
             /*List<Nilai> nilaiList = nilaiDao.findAll();
             for (Nilai n : nilaiList){
                 System.out.println("Id      : " + n.getId());
-                System.out.println("Code    : " + n.getCode());
+                System.out.println("Kode    : " + n.getKode());
                 System.out.println("Nilai   : " + n.getNilai());
                 System.out.println("--------------------------");
             }*/
