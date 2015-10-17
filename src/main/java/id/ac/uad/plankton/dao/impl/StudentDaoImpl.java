@@ -24,7 +24,7 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public void insert(Student student) throws SQLException {
 
-        PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO student (id_student, nama_anak,address) VALUES (?,?,?)");
+        PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO student (id, nama_anak,address) VALUES (?,?,?)");
         preparedStatement.setInt(1, student.getId());
         preparedStatement.setString(2, student.getName());
         preparedStatement.setString(3, student.getAddress());
@@ -33,7 +33,7 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public void update(int id_student, Student updatedStudent) throws SQLException {
+    public void update(int id, Student updatedStudent) throws SQLException {
 
         PreparedStatement preparedStatement = connection.prepareStatement("UPDATE student SET nama_anak=?,address=? WHERE id=?");
         preparedStatement.setString(1, updatedStudent.getName());
@@ -44,15 +44,15 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public void delete(int id_student) throws SQLException {
+    public void delete(int id) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM MataKuliah WHERE id_makul=?");
-        preparedStatement.setInt(1,id_student);
+        preparedStatement.setInt(1,id);
         ResultSet resultSet = preparedStatement.executeQuery();
 
     }
 
     @Override
-    public Student findById(int id_student) {
+    public Student findById(int id) {
         return null;
     }
 
@@ -60,7 +60,7 @@ public class StudentDaoImpl implements StudentDao {
     public List<Student> findAll() {
 
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT id_student,nama_anak,address AS alamat FROM student");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT id,nama_anak,address AS alamat FROM student");
             ResultSet resultSet = preparedStatement.executeQuery();
 
             List<Student> studentList = new ArrayList<>();

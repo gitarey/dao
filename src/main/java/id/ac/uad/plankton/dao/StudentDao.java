@@ -11,7 +11,7 @@ import java.util.List;
 public interface StudentDao {
     void insert(Student student) throws SQLException;
 
-    void update(int id_student, Student updatedStudent) throws SQLException;
+    void update(int id, Student updatedStudent) throws SQLException;
 
     void delete(int id) throws SQLException;
 

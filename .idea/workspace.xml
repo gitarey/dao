@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53930487-cbdb-4fa9-adb7-832e4fc8fcbc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/MainAplication.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/MainAplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/NilaiDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/NilaiDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="latian.iws" />
@@ -62,15 +67,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/CourseDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,52 +121,93 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/NilaiDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#3096#3097#0" expanded="true" />
-                <element signature="e#3123#3124#0" expanded="true" />
-                <marker date="1444992343409" expanded="true" signature="660:716" placeholder="INSERT INTO ..." />
-                <marker date="1444992343409" expanded="true" signature="1093:1144" placeholder="UPDATE Nilai..." />
-                <marker date="1444992343409" expanded="true" signature="1538:1574" placeholder="DELETE FROM ..." />
-                <marker date="1444992343409" expanded="true" signature="1864:1906" placeholder="SELECT nilai..nilai..." />
-                <marker date="1444992343409" expanded="true" signature="2386:2427" placeholder="SELECT id_st..Nilai..." />
+                <marker date="1445083806774" expanded="true" signature="660:708" placeholder="INSERT INTO ..." />
+                <marker date="1445083806774" expanded="true" signature="1085:1136" placeholder="UPDATE Nilai..." />
+                <marker date="1445083806774" expanded="true" signature="1530:1566" placeholder="DELETE FROM ..." />
+                <marker date="1445083806774" expanded="true" signature="1856:1898" placeholder="SELECT nilai..nilai..." />
+                <marker date="1445083806774" expanded="true" signature="2378:2411" placeholder="SELECT id_st..Nilai..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainAplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainAplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/MainAplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7208238">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nilai.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Nilai.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.35585585">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
                 <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1445083806790" expanded="true" signature="703:761" placeholder="INSERT INTO ..." />
+                <marker date="1445083806790" expanded="true" signature="1158:1209" placeholder="UPDATE stude..." />
+                <marker date="1445083806790" expanded="true" signature="1602:1641" placeholder="DELETE FROM ..." />
+                <marker date="1445083806790" expanded="true" signature="1982:2032" placeholder="SELECT id,na..student..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,25 +390,25 @@
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/KRS.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/db/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/lecture.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/lectureDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/lectureDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/MataKuliahDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/MataKuliahDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/MataKuliah.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/MataKuliahDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/CourseDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/CourseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/NilaiDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/NilaiDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/MainAplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/NilaiDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java" />
       </list>
     </option>
   </component>
@@ -386,9 +427,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1366" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -413,8 +454,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -625,7 +667,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1023,16 +1064,17 @@
       <workItem from="1444976473744" duration="826000" />
       <workItem from="1444978906450" duration="8518000" />
       <workItem from="1445075748017" duration="35000" />
-      <workItem from="1445078753383" duration="424000" />
+      <workItem from="1445078753383" duration="1023000" />
+      <workItem from="1445082153804" duration="2355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51355000" />
+    <option name="totallyTimeSpent" value="54309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1041,7 +1083,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902297" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1050,14 +1093,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.48828697" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1096,18 +1138,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
             <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1147,8 +1193,10 @@
           <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
+            <marker date="1445083806790" expanded="true" signature="703:761" placeholder="INSERT INTO ..." />
+            <marker date="1445083806790" expanded="true" signature="1158:1209" placeholder="UPDATE stude..." />
+            <marker date="1445083806790" expanded="true" signature="1602:1641" placeholder="DELETE FROM ..." />
+            <marker date="1445083806790" expanded="true" signature="1982:2032" placeholder="SELECT id,na..student..." />
           </folding>
         </state>
       </provider>
@@ -1210,8 +1258,10 @@
           <caret line="73" column="0" selection-start-line="57" selection-start-column="8" selection-end-line="83" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
+            <marker date="1445083806790" expanded="true" signature="703:761" placeholder="INSERT INTO ..." />
+            <marker date="1445083806790" expanded="true" signature="1158:1209" placeholder="UPDATE stude..." />
+            <marker date="1445083806790" expanded="true" signature="1602:1641" placeholder="DELETE FROM ..." />
+            <marker date="1445083806790" expanded="true" signature="1982:2032" placeholder="SELECT id,na..student..." />
           </folding>
         </state>
       </provider>
@@ -1258,8 +1308,10 @@
           <caret line="73" column="0" selection-start-line="57" selection-start-column="8" selection-end-line="83" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
+            <marker date="1445083806790" expanded="true" signature="703:761" placeholder="INSERT INTO ..." />
+            <marker date="1445083806790" expanded="true" signature="1158:1209" placeholder="UPDATE stude..." />
+            <marker date="1445083806790" expanded="true" signature="1602:1641" placeholder="DELETE FROM ..." />
+            <marker date="1445083806790" expanded="true" signature="1982:2032" placeholder="SELECT id,na..student..." />
           </folding>
         </state>
       </provider>
@@ -1405,45 +1457,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4954955">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45945945">
-          <caret line="69" column="55" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22522523">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/NilaiDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/CourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/MainAplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,43 +1500,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Course.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/CourseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/NilaiDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1506,27 +1514,75 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/NilaiDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#3096#3097#0" expanded="true" />
-            <element signature="e#3123#3124#0" expanded="true" />
-            <marker date="1444992343409" expanded="true" signature="660:716" placeholder="INSERT INTO ..." />
-            <marker date="1444992343409" expanded="true" signature="1093:1144" placeholder="UPDATE Nilai..." />
-            <marker date="1444992343409" expanded="true" signature="1538:1574" placeholder="DELETE FROM ..." />
-            <marker date="1444992343409" expanded="true" signature="1864:1906" placeholder="SELECT nilai..nilai..." />
-            <marker date="1444992343409" expanded="true" signature="2386:2427" placeholder="SELECT id_st..Nilai..." />
+            <marker date="1445083806774" expanded="true" signature="660:708" placeholder="INSERT INTO ..." />
+            <marker date="1445083806774" expanded="true" signature="1085:1136" placeholder="UPDATE Nilai..." />
+            <marker date="1445083806774" expanded="true" signature="1530:1566" placeholder="DELETE FROM ..." />
+            <marker date="1445083806774" expanded="true" signature="1856:1898" placeholder="SELECT nilai..nilai..." />
+            <marker date="1445083806774" expanded="true" signature="2378:2411" placeholder="SELECT id_st..Nilai..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/MainAplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/impl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7208238">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1445083806790" expanded="true" signature="703:761" placeholder="INSERT INTO ..." />
+            <marker date="1445083806790" expanded="true" signature="1158:1209" placeholder="UPDATE stude..." />
+            <marker date="1445083806790" expanded="true" signature="1602:1641" placeholder="DELETE FROM ..." />
+            <marker date="1445083806790" expanded="true" signature="1982:2032" placeholder="SELECT id,na..student..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/dao/StudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/id/ac/uad/plankton/model/Nilai.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35585585">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

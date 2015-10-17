@@ -7,6 +7,9 @@ public class Course {
 
     private int kode;
     private String nama;
+    private Course course;
+    private Student student;
+    private String nilai;
 
     public Course(){
 

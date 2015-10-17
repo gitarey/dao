@@ -22,7 +22,7 @@ public class NilaiDaoImpl implements NilaiDao {
 
     @Override
     public void insert(Nilai nilai) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Nilai (id_student,kode,nilai) VALUES (?,?,?)");
+        PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Nilai (id,kode,nilai) VALUES (?,?,?)");
         preparedStatement.setInt(1, nilai.getId_student());
         preparedStatement.setInt(2, nilai.getKode());
         preparedStatement.setInt(3, nilai.getNilai());
@@ -70,7 +70,7 @@ public class NilaiDaoImpl implements NilaiDao {
     @Override
     public List<Nilai> findAll() {
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT id_student, kode, nilai FROM Nilai");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT id, kode, nilai FROM Nilai");
             ResultSet resultset = preparedStatement.executeQuery();
 
             List<Nilai>nilaiList = new ArrayList<>();
